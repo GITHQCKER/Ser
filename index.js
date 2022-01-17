@@ -376,32 +376,32 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             var but = [
           {
             "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "displayText": "MESSAGE TO OWNER",
               "url": `${youtube}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "FIND TO OWNER",              
               "url": `${myweb}`
 
             }
           },
           {
             "quickReplyButton": {
-              "displayText": "𝑅𝑢𝑙𝑒𝑠",
+              "displayText": "DONATE TO OWNER",
 "id": 'rules'
             }
           },
           {
             "quickReplyButton": {
-              "displayText": "𝑂𝑤𝑛𝑒𝑟",
+              "displayText": "OWNER",
 "id": 'owner'
             }
           },
 {
             "quickReplyButton": {
-              "displayText": "𝐿𝑖𝑠𝑡 𝑐𝑜𝑚𝑚𝑎𝑛𝑑",
+              "displayText": "LIST COMMAND",
 "id": 'command'
             }
           }
@@ -622,7 +622,7 @@ await fs.unlinkSync(mengmeme)
 break
             case 'join': {
                 if (!isCreator) throw mess.owner
-                if (!text) throw 'Masukkan Link Group!'
+                if (!text) throw 'Join group!'
                 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) throw 'Link Invalid!'
                 reply(lang.wait())
                 let result = args[0].split('https://chat.whatsapp.com/')[1]
@@ -712,7 +712,7 @@ break
             case 'setmenu':{
             	if (!m.key.fromMe && !isCreator) return reply(lang.ownerOnly())
             const listhades = ['templateLocation', 'templateTenor']
-			alpha.sendList(from, 'Mau set menu bang ?', `© ${ownername}`, salam + pushname, 'KLIK DISINI', [
+			alpha.sendList(from, ' set menu  ?', `© ${ownername}`, salam + pushname, 'KLIK DISINI', [
 							{
 								"title": "Set Menu-1",
 								"rows": [
